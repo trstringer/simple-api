@@ -101,3 +101,7 @@ resource "azurerm_virtual_machine" "mgmtvm" {
     environment = "build"
   }
 }
+
+output "build_server_fqdn" {
+  value = "${azurerm_public_ip.mgmtip.fqdn}"
+}
