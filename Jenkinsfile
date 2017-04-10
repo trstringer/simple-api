@@ -1,14 +1,14 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-    
-  }
+  agent any
   stages {
-    stage('test') {
+    stage('init') {
       steps {
         echo 'test initialization step'
+        sh 'npm install'
+      }
+    }
+    stage('test') {
+      steps {
         sh 'npm test'
       }
     }
