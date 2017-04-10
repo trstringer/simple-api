@@ -4,3 +4,28 @@
 
 *To be continued...*
 
+## CI/CD
+
+```
+                                                                 +------------+
+                                                                 |            |
++--------------+        +--------+         +------------+  fail  | notify     |
+|              |        |        |  trigger|            +------->+ developers |
+| develop      | push   | github |  build  | test code  |        |            |
+| code locally +------->+ repo   +-------->+ in jenkins |        +------------+
+|              |        |        |         |            +----->
++--------------+        +--------+         +------------+     |
+                                                              |
+                       success                                |
+   <----------------------------------------------------------+
+   |
+   |   +----------------+        +-------------+     +--------------------+
+   |   |                |        |             |     |                    |
+   |   | provision      |        | deploy new  |     | deprovision old    |
+   +-->+ infrastructure +------->+ version of  +---->+ infrastructure/app |
+       |                |        | application |     |                    |
+       +----------------+        |             |     +--------------------+
+                                 +-------------+
+```
+
+The infrastructure provisioning is accomplished with Terraform.
