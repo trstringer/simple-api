@@ -1,14 +1,10 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-    
-  }
+  agent any
   stages {
     stage('Initialization') {
       steps {
         echo 'test initialization step'
+        sh 'whoami'
       }
     }
   }
