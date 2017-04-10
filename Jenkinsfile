@@ -6,13 +6,9 @@ pipeline {
     
   }
   stages {
-    stage('init') {
+    stage('test') {
       steps {
         echo 'test initialization step'
-      }
-    }
-    stage('tests') {
-      steps {
         sh 'npm test'
       }
     }
