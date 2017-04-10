@@ -24,11 +24,10 @@ pipeline {
   post {
     success {
       sh 'echo "it succeeded"'
-      sh 'echo $ARM_SUBSCRIPTION_ID'
+      sh 'cd infra/prod && terraform apply'
     }
     failure {
       sh 'echo "it failed"'
-      sh 'echo $ARM_TENANT_ID'
     }
   }
 }
