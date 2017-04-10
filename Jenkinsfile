@@ -13,4 +13,12 @@ pipeline {
       }
     }
   }
+  post {
+    success {
+      sh 'echo "it succeeded"'
+    }
+    failure {
+      sh 'echo "it failed"'
+    }
+  }
 }
