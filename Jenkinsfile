@@ -9,7 +9,6 @@ pipeline {
     stage('init') {
       steps {
         echo 'test initialization step'
-        sh 'whoami'
       }
     }
     stage('tests') {
