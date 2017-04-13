@@ -2,3 +2,4 @@ node_modules
 terraform.tfstate*
 playbook.retry
 infra/mgmt
+infra/beconf.tfvars
