@@ -2,7 +2,7 @@
 
 ## CI/CD Provisioning and Configuration
 
-*To be continued...*
+*To be added...*
 
 ## CI/CD
 
