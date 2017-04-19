@@ -23,7 +23,7 @@ pipeline {
   }
   post {
     success {
-      sh 'cd infra/prod && terraform apply'
+      sh 'cd infra/prod && terraform get -update && terraform apply'
     }
     failure {
       sh 'echo "it failed"'
