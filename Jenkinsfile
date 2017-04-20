@@ -23,7 +23,7 @@ pipeline {
   }
   post {
     success {
-      sh 'cd infra/prod && terraform get -update && terraform apply'
+      sh 'cd infra/prod && terraform get -update && terraform apply -var "ssh_public_key=$(cat ~/.ssh/id_rsa.pub)"'
     }
     failure {
       sh 'echo "it failed"'
