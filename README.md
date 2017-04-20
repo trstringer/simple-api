@@ -1,4 +1,4 @@
-# Simple Devops [![Build Status](https://travis-ci.org/tstringer/simple-api.svg?branch=master)](https://travis-ci.org/tstringer/simple-api)
+# Simple Devops [![Build Status](https://jenkinsvm1.eastus.cloudapp.azure.com/jenkins/buildStatus/icon?job=tstringer/simple-api/master)](https://jenkinsvm1.eastus.cloudapp.azure.com/jenkins/job/tstringer/job/simple-api/job/master/)
 
 ## CI/CD Provisioning and Configuration
 
