@@ -3,3 +3,4 @@ terraform.tfstate*
 playbook.retry
 infra/mgmt
 infra/beconf.tfvars
+.terraform/
